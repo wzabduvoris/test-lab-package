@@ -7,17 +7,11 @@ let package = Package(
     name: "test-lab-package",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(
-            name: "test-lab-package",
-            targets: ["test-lab-package"]),
+        .library(name: "test_lab_package", targets: ["test_lab_package"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "test-lab-package"),
-        .testTarget(
-            name: "test-lab-packageTests",
-            dependencies: ["test-lab-package"]),
+        .target(name: "test_lab_package"),
     ]
 )
